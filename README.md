@@ -69,3 +69,87 @@ Preprocessing includes handling outliers, missing data, normalization, encoding,
 
 ## 📁 Project Structure
 
+```
+📁 Time-Series-Forecasting/
+├── final.ipynb       # Main Jupyter notebook with full implementation
+├── README.md         # Project documentation
+```
+
+---
+
+## 🧰 Technologies Used
+
+| Tool/Library         | Purpose |
+|----------------------|---------|
+| Python               | Core programming language |
+| Pandas, NumPy        | Data manipulation and numerical operations |
+| Matplotlib, Seaborn  | Data visualization |
+| Scikit-learn         | Feature scaling, preprocessing, and evaluation |
+| TensorFlow / Keras   | Deep learning (LSTM implementation) |
+| Statsmodels          | Statistical models (ARIMA, SARIMA, SARIMAX) |
+| Prophet              | Time series forecasting library by Facebook |
+
+---
+
+## ⚙️ How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/time-series-forecasting.git
+cd time-series-forecasting
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+> If `requirements.txt` is not available, install manually:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn tensorflow keras statsmodels prophet
+```
+
+### 3. Run the Notebook
+
+```bash
+jupyter notebook final.ipynb
+```
+
+---
+
+## 📊 Evaluation Metrics
+
+- **MAE (Mean Absolute Error)**
+- **MSE (Mean Squared Error)**
+- **RMSE (Root Mean Squared Error)**
+- **R² Score (Coefficient of Determination)**
+
+Used to evaluate model prediction accuracy.
+
+---
+
+## 📌 Notes
+
+- Dataset must include a time-based column (e.g., `Date`).
+- For Prophet: use `ds` for date and `y` for target value.
+- LSTM input must be reshaped to 3D format: `(samples, timesteps, features)`.
+- SARIMA and SARIMAX require careful seasonal parameter tuning.
+
+---
+
+## 📚 References
+
+- [Facebook Prophet Documentation](https://facebook.github.io/prophet/)
+- [Statsmodels Documentation](https://www.statsmodels.org/)
+- [Keras Time Series Example](https://keras.io/examples/timeseries/)
+- [Scikit-learn Metrics](https://scikit-learn.org/stable/modules/model_evaluation.html)
+- [IQR and Z-Score for Outlier Detection](https://towardsdatascience.com)
+
+---
+
+
+---
+
